@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    background-color: #5bf;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.MainBlock {
+    display: flex;
+    justify-content: center;  
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;  
+}
+
+.MainTable {
+    width: 100%;
+    text-align: center;
+    background-color: #eee;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.NameHeader {
+    padding: 10px;
+}
+
+.InfoHeader {
+    padding: 7px;
+}
+
+.PictureContainer {
+    height: 400px;
+    padding: 10px 0px;
+}
+
+.DataForm {
+    width: 100%;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.FormTable {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.TableHeader {
+    padding: 5px;
+}
+
+.FormRow {
+    height: 50px;
+}
+
+.FormFields {
+    width: 100%;
+    text-align: inherit;
+    border: 0px;
+}
+
+.VariableName {
+    font-size: large;
+}
+
+.Value {
+    font-size: large;
+}
+
+.SelectButton {
+    width: 10%;
+    height: 35px;
+    margin: 2px;
+    background-color: #5bf;
+    border: 2px solid #08f;
+    color: #eee;
+    font-size: large;
+    border-radius: 4px;
+}
+
+.SelectButton:hover {
+    border: 2px solid #00f;
+}
+
+.SelectButton:active {
+    background-color: #08f;
+}
+
+.TextInput {
+    height: 35px;
+    text-align: center;
+    border: 2px solid #08f;
+    color: #08f;
+    border-radius: 4px;
+    font-size: large;
+    outline: none;
+}
+
+.TextInput:hover {
+    border: 2px solid #00f;
+}
+
+.TextInput:focus {
+    border: 2px solid #00f;
+}
+
+.SubmitButtonContainer {
+    padding: 1px 1px;
+    border: 0px;
+}
+
+.SubmitButton {
+    width: 25%;
+    height: 45px;
+    background-color: #5bf;
+    border: 2px solid #08f;
+    color: #eee;
+    font-size: large;
+    border-radius: 4px;
+}
+
+.SubmitButton:hover {
+    border: 2px solid #00f;
+}
+
+.SubmitButton:active {
+    background-color: #08f;
+}
+
+table.history {
+    width: 98%;
+    margin: 0 auto;
+}
+
+table.history td {
+    border: solid #08f 2px;
+    border-bottom: solid #08f 1px;
+}
+
+table.history td[fail] {
+    color: darkred;
+}
+
+table.history td[success] {
+    color: forestgreen;
+}
+
+table.history td[header] {
+    background-color: #08f;
+    font-weight: bold;
+    border: solid #08f 2px;
+}
+
+table.history tr[justAdded] {
+    background-color: #5bf;
+    border-left: solid #08f 2px;
+    border-top: solid #08f 2px;
+    border-bottom: solid #08f 2px;
+    border-right: solid #08f 2px;
+    border-radius: 4px;
+}
+
+table.history tr[justAdded]:first-child {
+    border-left: solid #08f 2px;
+    border-top: solid #08f 2px;
+    border-bottom: solid #08f 2px;
+    border-right: solid #08f 2px;
+}
+
+tr[justAdded] td[success] {
+    border-left: solid #08f 2px;
+    border-top: solid #08f 2px;
+    border-bottom: solid #08f 2px;
+    border-right: solid #08f 2px;
+}
