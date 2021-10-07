@@ -151,7 +151,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                                             <label class="VariableName">Y</label>
                                         </td>
                                         <td class="ValueContainer">
-                                            <label class="Value YVal" id="labelY">0</label>
+                                            <label class="Value YVal" id="labelY">0.0</label>
                                         </td>
                                         <td class="TextInputContainer">
                                             <input
@@ -164,7 +164,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                                                     onchange="validateY()"
                                                     required/>
                                             <input type="hidden" name="x" id="x" value="0"/>
-                                            <input type="hidden" name="r" id="r" value="0"/>
+                                            <input type="hidden" name="r" id="r" value="1"/>
                                         </td>
                                     </tr>
                                     <tr class="FormRow">
@@ -172,7 +172,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                                             <label class="VariableName">R</label>
                                         </td>
                                         <td class="ValueContainer">
-                                            <label class="Value ZVal" id="labelR">0</label>
+                                            <label class="Value ZVal" id="labelR">1</label>
                                         </td>
                                         <td class="ButtonContainer">
                                             <button type="button" class="SelectButton" onclick="setR(1);">1</button>
