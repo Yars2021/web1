@@ -15,9 +15,8 @@ function setR(r) {
 function validateY() {
     let y = document.getElementsByName("y")[0].value;
     // Validate pattern matching: '^\-?\d+$' and remove all non-matching characters
-    if (!y.match(/^[-\d]?\d+?$/)) {
-        y = y.replace(/^[^\d-]/, '');
-        y = y.replace(/\D/g, '');
+    if (!y.match(/^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$/)) {
+        y = '';
     }
     // Check range (-3..5)
     if ((y !== '') &&
