@@ -70,7 +70,7 @@ if (isset($action)) {
 
 if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
     $result = calculate($x, $y, $r);
-    $executionTime = (microtime(true) - $time) * 1000;
+    $executionTime = round((microtime(true) - $time) * 1000, 3);
     add_record($filename, $x, $y, $r, $executionTime, $result);
     $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http")
         . "://$_SERVER[HTTP_HOST]$_SERVER[PHP_SELF]" . '?action=check';
