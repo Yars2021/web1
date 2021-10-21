@@ -161,6 +161,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                                                     placeholder="A number between -3 and 5"
                                                     min="-3"
                                                     max="5"
+						    maxlength="8"
                                                     onchange="validateY()"
                                                     required/>
                                             <input type="hidden" name="x" id="x" value="0"/>
